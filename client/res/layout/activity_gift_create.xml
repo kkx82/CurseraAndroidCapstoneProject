@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/standard_padding" >
+
+    
+    <TextView
+        android:id="@+id/gift_create_view_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/big_padding"
+        android:text="@string/gift_create_view_title"
+        android:textSize="@dimen/midle_title" />
+    
+    <Button
+        android:id="@+id/gift_create_from_camera"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:onClick="onLaunchCamera"
+        android:text="@string/gift_create_from_camera"
+        android:textSize="@dimen/small_text" />
+    	
+	<ImageView
+	    android:id="@+id/gift_create_image"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:adjustViewBounds="true"
+	    android:contentDescription="@string/gift_create_image"
+	    android:maxHeight="500dp"
+	    android:padding="@dimen/big_padding"
+	    android:src="@drawable/placeholder" />
+    
+    <EditText
+        android:id="@+id/gift_create_form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/gift_create_form_title_hint"
+        android:padding="@dimen/big_padding"
+        android:textSize="@dimen/small_text" />
+
+  	<EditText
+  	    android:id="@+id/gift_create_form_text"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:hint="@string/gift_create_form_text_hint"
+  	    android:inputType="textMultiLine"
+  	    android:padding="@dimen/big_padding"
+  	    android:textSize="@dimen/small_text" >
+ 
+    </EditText>
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    
+		<Button
+		    android:id="@+id/gift_create_OK"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:onClick="createPostGift"
+		    android:padding="@dimen/big_padding"
+		    android:text="@string/gift_create_OK_button_label"
+		    android:textSize="@dimen/small_text" />
+	    
+	    <Button
+	        android:id="@+id/gift_create_cancel"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="createCancel"
+	        android:padding="@dimen/big_padding"
+	        android:text="@string/gift_create_cancel_button_label"
+	        android:textSize="@dimen/small_text" />
+     
+	</LinearLayout>    
+</LinearLayout>
+</ScrollView>

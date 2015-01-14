@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/big_padding" >
+
+	<LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	
+    	<TextView
+    	    android:id="@+id/chain_update_date_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:padding="@dimen/standard_padding"
+    	    android:text="@string/text_chain_activity_update_date"
+    	    android:textSize="@dimen/midle_title" />
+    
+    	<TextView
+        	android:id="@+id/chain_update_date"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:padding="@dimen/standard_padding"
+        	android:textSize="@dimen/midle_title" />
+    	
+	</LinearLayout>
+    
+    
+   	<TableLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:stretchColumns="1" >
+
+		<TableRow>
+        
+	        <ImageView
+	            android:id="@+id/first_gift_image"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:adjustViewBounds="true"
+	            android:contentDescription="@string/image_content_descriptor"
+	            android:padding="@dimen/standard_padding"
+	            android:src="@drawable/placeholder" />
+	        
+	        <ImageView
+	            android:id="@+id/second_gift_image"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:adjustViewBounds="true"
+	            android:contentDescription="@string/image_content_descriptor"
+	            android:padding="@dimen/standard_padding"
+	            android:src="@drawable/placeholder" />
+        
+        	<ImageView
+        	    android:id="@+id/third_gift_image"
+        	    android:layout_width="0dip"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="1"
+        	    android:adjustViewBounds="true"
+        	    android:contentDescription="@string/image_content_descriptor"
+        	    android:padding="@dimen/standard_padding"
+        	    android:src="@drawable/placeholder" />
+        	
+			<ImageView
+			    android:id="@+id/fourth_gift_image"
+			    android:layout_width="0dip"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:adjustViewBounds="true"
+			    android:contentDescription="@string/image_content_descriptor"
+			    android:padding="@dimen/standard_padding"
+			    android:src="@drawable/placeholder" />
+       
+		</TableRow>
+            
+	</TableLayout>
+
+</LinearLayout>

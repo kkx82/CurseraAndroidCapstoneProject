@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+    <item
+        android:id="@+id/option_show_flagged"
+        android:title="@string/menu_option_show_flagged" 
+        android:checkable="true" 
+        android:showAsAction="never" 
+        android:checked="false"/>
+    <item
+        android:id="@+id/option_log_out"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="@string/menu_option_log_out" 
+        android:showAsAction="never"/>
+    
+    <item android:id="@+id/action_search"
+          android:title="@string/menu_option_search"
+          android:icon="@drawable/ic_action_search2"
+          android:showAsAction="collapseActionView|ifRoom"
+          android:actionViewClass="android.widget.SearchView" />
+
+    <item android:id="@+id/top_givers" 
+        android:title="@string/menu_option_top_givers" 
+        android:icon="@drawable/ic_action_top_givers2"
+        android:showAsAction="ifRoom"/>
+    
+    <item android:id="@+id/update_schedule" 
+        	android:title="@string/menu_option_schedulers" 
+        	android:icon="@drawable/ic_scheduler"
+        	android:showAsAction="ifRoom">
+    	<menu>
+    		<group android:checkableBehavior="single">
+				<item android:id="@+id/one_min"
+              		android:title="@string/menu_scheduler_1min" />
+        		<item android:id="@+id/five_min"
+              		android:title="@string/menu_scheduler_5min" />
+        		<item android:id="@+id/sixty_min"
+              		android:title="@string/menu_scheduler_60min" />
+    		</group>
+    	</menu>
+    </item>
+    
+</menu>
